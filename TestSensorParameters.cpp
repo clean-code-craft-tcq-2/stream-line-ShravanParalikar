@@ -14,3 +14,8 @@ TEST_CASE("Test whether sensor inputs are in Range")
   REQUIRE(sensor_data >= lower_limit);
 }
 
+TEST_CASE("Send Sensor data to console")
+{
+    Get_Sensor_Data();
+}
+
