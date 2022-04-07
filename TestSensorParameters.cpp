@@ -8,9 +8,9 @@ TEST_CASE("Test whether sensor inputs are in Range")
   int upper_limit = 25;
   int lower_limit = 0;
 
-  int randomInteger = getRandomIntegerInRange(lower_limit, upper_limit);
+  int sensor_data = Get_Sensor_Data(lower_limit, upper_limit);
 
-  REQUIRE(randomInteger <= upper_limit);
-  REQUIRE(randomInteger >= lower_limit);
+  REQUIRE(sensor_data <= upper_limit);
+  REQUIRE(sensor_data >= lower_limit);
 }
 
